@@ -1,0 +1,8 @@
+<div>
+  <ul>
+    <li class="title" *ngFor="let user of users">
+      <span class= "status" [ngStyle]="{backgroundColor:(user.active ? '#2ecc71' : '#c0392b')}"></span>
+      {{ user.name}}
+    </li>
+  </ul>
+</div>

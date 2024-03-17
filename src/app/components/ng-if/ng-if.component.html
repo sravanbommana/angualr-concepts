@@ -1,0 +1,4 @@
+<div>
+  <input type="text" [value]="productName" (input)="handleChange($event)"/>
+  <div *ngIf="productName.length > 0">Seraching for.... {{productName}}</div>
+</div>
