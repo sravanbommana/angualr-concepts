@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  standalone: false
 })
+
 export class AppComponent {
-  title = 'my-ng-app';
+  title: String;
+  constructor() {
+    this.title = 'Ultimate Angular'
+  }
 }

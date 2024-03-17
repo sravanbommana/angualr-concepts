@@ -1,0 +1,6 @@
+<div>
+  <input type="text" [ngModel]="name" (ngModelChange)="handleChange($event)" />
+  <div>{{name}}</div>
+  <input type="text" [(ngModel)]="city" />
+  <div>{{city}}</div>
+</div>
